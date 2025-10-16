@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kavita
+    env: docker
+    region: frankfurt
+    plan: free
+    disk:
+      name: kavita-data
+      mountPath: /kavita/data
+      sizeGB: 10
+    autoDeploy: true
+    healthCheckPath: /
